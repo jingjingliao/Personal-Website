@@ -1,6 +1,12 @@
 <html>
     <head>
         <style type="text/css">
+            @media (max-width: 1200px) {
+                #amazing-header {
+                flex-direction: column;
+                }
+            }
+
            #amazing-header {
             height: 100px;
             position: fixed;
@@ -14,7 +20,7 @@
             justify-content:space-between;
             align-items: center;
             z-index: 2;
-        }
+            }
 
             .interests {
                 color: azure;
@@ -22,8 +28,6 @@
                 margin-right: 20px;
                 margin-left: 20px;
             }
-
-            
 
             a {
                 margin-right: 100px;
@@ -100,7 +104,8 @@
      
         <div class="grid-container">
 
-            <div class="box" id="leftbar"> Interests
+            <div class="box" id="leftbar"> 
+                <h3>Interests</h3>
                 <ul>
                     <li>Hiking</li>
                     <li>Walking</li>
@@ -130,10 +135,6 @@
                 I like to enjoy beautiful scenary in nature, and explore
                 something new.
             </div>
-
-            
-           
         </div>
-
     </body>
 </html>

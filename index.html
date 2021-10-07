@@ -1,6 +1,16 @@
 <html>
     <head>
         <style type="text/css">
+            @media (max-width: 1200px) {
+              #amazing-header {
+                flex-direction: column;
+              }
+
+              img {
+                  display: none;
+                }
+            }
+
             #amazing-header {
             height: 100px;
             position: fixed;
@@ -14,12 +24,11 @@
             justify-content:space-between;
             align-items: center;
             z-index: 2;
-        }
+            }
 
             .name {
                 color: azure;
                 font-size: 50px;
-                margin-right: 20px;
                 margin-left: 20px;
             }
 
@@ -46,10 +55,10 @@
             }
 
             .welcome {
-                font-size: 80px;
                 font-weight: bold;
                 color:cornflowerblue;
-                font-family:cursive
+                font-family:cursive;
+                padding-bottom: 5px;
                 }
 
             .btn {
@@ -62,8 +71,7 @@
     <body> 
         <div id="amazing-header">
             <div>
-                
-                <div class="Name"><img src="image/photo.jpg"> Jingjing Liao </div> 
+                <div class="name"><img src="image/photo.jpg"> Jingjing Liao </div> 
             </div>
             
             
@@ -75,10 +83,9 @@
             </div>
         </div>
         <div class="container">
-                <p>
-                  <span class="welcome">Welcome </span>
-                  <span class="intro"> to my personal website!</span>
-                </p>
+                <span>
+                    <h1 class="welcome">Welcome ! </h1>
+                </span>
                 <div class="content">
                   <p>
                     My name is Jingjing Liao, currently, I am pursuing my master
@@ -115,8 +122,6 @@
               </div>
             </div>
           </div>
-        
-
         </div>
     </body>
 </html>
