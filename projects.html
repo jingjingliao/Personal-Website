@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <style type="text/css">
+           #amazing-header {
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0; 
+
+            background-color: lightblue;
+            width: 100%;
+           
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+            .projects {
+                color: azure;
+                font-size: 50px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            img {
+                width:50px;
+                height:50px;
+                border-radius: 60%;
+            }
+
+            .info a {
+                margin-right: 100px;
+                font-size: 25px;
+                color: azure;
+            }
+
+            a:hover {
+                font-size: 40px;
+            }
+
+            .allProjects {
+                width: 100%;
+                display: flex; 
+                justify-content: space-around;
+                top: 200px;
+                position: relative;
+                margin-bottom: 40px;
+            }
+
+            .project1, .project2, .project3, .project4 {
+                height: 400px;
+                width: 400px;
+                border: 2px solid rgb(123, 123, 208);
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+            }
+
+            .allProjects img {
+                width: 250px;
+                height: 250px;
+                margin-bottom: 10px;
+            }
+
+            .desc {
+                margin-bottom: 20px;
+            }
+
+            .link a {
+                color: blue;
+            }
+
+        </style>
+    </head>
+    <body> 
+        <div id="amazing-header">
+            <div>
+                <div class="projects"> Projects Info </div> 
+            </div>
+            <div class="info">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="interests.html">Interests</a>
+            </div>
+        </div>
+        <div class="allProjects">
+            <div class="project1">
+                <div>
+                    <img src="image/SafePath.png">
+                </div>
+                <div class="desc">
+                    A pedestrian emergency notification app such as fire, shooting,
+                robbery location, updates.
+                </div>
+                <div class="link">
+                    <a href="https://youtu.be/wLZE49BX7T4">Website</a>
+                </div>
+            </div> 
+            <div class="project2">
+                <div>
+                    <img src="image/weather.png">
+                </div>
+                <div class="desc">
+                    A functional Weather App by implementing OpenWeatherMap API
+                </div>
+            </div>
+        </div>
+
+        <div class="allProjects">
+            <div class="project3">
+                <div>
+                    <img src="image/colorGame.png">
+                </div>
+                <div class="desc">
+                    Guessing which color corresponds to the target color. Users can
+                choose easy or hard mode to play the game.
+                </div>
+            </div>
+            <div class="project4">
+                <div>
+                    <img src="image/othelloGame.png">
+                </div>
+                <div class="desc">
+                    A simple AI player that always makes the best move (but does not
+                plan ahead), and a simple score tracking system (a text file
+                that keeps the high score at the top).
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

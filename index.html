@@ -1,10 +1,122 @@
 <html>
     <head>
         <style type="text/css">
+            #amazing-header {
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0; 
+
+            background-color: lightblue;
+            width: 100%;
+           
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+            .name {
+                color: azure;
+                font-size: 50px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            img {
+                width:50px;
+                height:50px;
+                border-radius: 60%;
+            }
+
+            a {
+                margin-right: 100px;
+                font-size: 25px;
+                color: azure;
+            }
+
+            a:hover {
+                font-size: 40px;
+            }
+
+            .container {
+                top: 120px;
+                position: relative;
+                font-size: 30px;
+            }
+
+            .welcome {
+                font-size: 80px;
+                font-weight: bold;
+                color:cornflowerblue;
+                font-family:cursive
+                }
+
+            .btn {
+                border: 1px solid cornflowerblue;
+                color: cornflowerblue;
+            }
 
         </style>
     </head>
     <body> 
-       
+        <div id="amazing-header">
+            <div>
+                
+                <div class="Name"><img src="image/photo.jpg"> Jingjing Liao </div> 
+            </div>
+            
+            
+            <div class="info">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="interests.html">Interests</a>
+            </div>
+        </div>
+        <div class="container">
+                <p>
+                  <span class="welcome">Welcome </span>
+                  <span class="intro"> to my personal website!</span>
+                </p>
+                <div class="content">
+                  <p>
+                    My name is Jingjing Liao, currently, I am pursuing my master
+                    degree in <strong>Computer Science</strong> at Northeastern
+                    University, Seattle campus.
+                  </p>
+                  <p>
+                    Coding is like a miracle to me as it helps me to build attractive
+                    <strong>websites</strong>, practical
+                    <strong>mobile applications</strong>. I enjoy learning new
+                    techniques, programming languages and frameworks everyday.
+                  </p>
+      
+                  <p>
+                    Click here to learn more about my <strong>projects</strong>!
+                    <a href="projects.html" class="btn">Projects</a>
+                  </p>
+      
+                  <p>
+                    For the past few months, I worked at Philips as a software engineer intern 
+                    at Cloud Development Team. My daily job is to fix bugs for the existing features 
+                    or programs, build internal tools for developers and deployment, 
+                    create and document smoke tests, performance tests, and records
+                  </p>
+
+                  <p>
+                    Before I went back to University, I worked as project manager in a
+                    curtain manufactory company for five years. During this time, I've
+                    learned the power of information and technology bringing to the
+                    business, which also encouring me to dive into the latest
+                    technology and exploring a new and challenging career.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
     </body>
 </html>

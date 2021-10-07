@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style type="text/css">
+           #amazing-header {
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0; 
+
+            background-color: lightblue;
+            width: 100%;
+           
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+            .interests {
+                color: azure;
+                font-size: 50px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            
+
+            a {
+                margin-right: 100px;
+                font-size: 25px;
+                color: azure;
+            }
+
+            a:hover {
+                font-size: 40px;
+            }
+
+            .grid-container {
+                top: 100px;
+                position: relative;
+                height: 100%;
+                background-color:rgb(224, 238, 243);
+                display: grid;
+                grid-template-areas: 
+                    "leftbar content-top content-top "
+                    "leftbar content-top content-top"
+                    "leftbar content-down content-down"
+                    "leftbar content-down content-down"
+                ;
+            }
+
+            .box {
+                border: 5px solid white;
+                font-size: 25px;
+                margin-left: 5px;
+            }
+
+            #leftbar {
+                grid-area: leftbar;
+                display: flex;
+                font-size: 25px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #content-top {
+                grid-area: content-top;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #content-down {
+                grid-area: content-down;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width:200px;
+                height:200px;
+                border-radius: 60%;
+            }
+
+        </style>
+    </head>
+    <body> 
+        <div id="amazing-header">
+            <div>
+                <div class="interests"> Interests Info </div> 
+            </div>
+            <div class="info">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="interests.html">Interests</a>
+            </div>
+        </div>
+     
+        <div class="grid-container">
+
+            <div class="box" id="leftbar"> Interests
+                <ul>
+                    <li>Hiking</li>
+                    <li>Walking</li>
+                    <li>Running</li>
+                    <li>Reading</li>
+                    <li>Travelling</li>
+                </ul>
+            </div>
+
+            <div class="box" id="content-top">
+                <img src="image/dog.jpg">
+
+                I have a lovely dog, He was only two months old when I adopted
+                him. He was so adorable and smart that my parents and I love
+                him so much. He can understand almost all of my orders such as
+                sitting down, shaking hands, rolling over, and even fetching
+                items for me. He will be six years old this year!
+            </div>
+
+            <div class="box" id="content-down">
+                <img src="image/life.png">
+
+                In my spare time, I like travelling, and hiking. I travelled
+                to lots of Asia and European countries and was deeply
+                attracted by their traditional food, amazing architecture and
+                unique cultures. Hiking is also my favourite activity because
+                I like to enjoy beautiful scenary in nature, and explore
+                something new.
+            </div>
+
+            
+           
+        </div>
+
+    </body>
+</html>
